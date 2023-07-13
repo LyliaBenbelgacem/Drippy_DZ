@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drippy_dz</title>
+    <!-- CSS file  -->
+    <link rel="stylesheet" href="CSS/englishFormStyle.css">
+    <!-- Box Icon  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Start NavBar  -->
+     <nav>
+        <div class="logo">
+            <div class="logo">Drippy_dz</div>
+        </div>
+         <ul>
+            <li><a href="arabicForm.html">Arabic</a></li>
+            <a href="shopEnglish.html"><i class='bx bxs-cart-alt'></i></a>
+         </ul>
+     </nav>
+     <!-- End NavBar  -->
+     <!-- Start Product Box  -->
+     <section class="flex-box">
+    <!-- Start Left Box  -->
+        <div class="left">
+            <div class="big-img">
+                <img src="imgs/d1.jpg" alt="image">
+            </div>
+        </div>
+     <!-- End Left Box  -->
+    <!-- Start Right Box  -->
+    <div class="right">
+        <div class="url">Home > Shop > Product-Box </div>
+        <div class="pname">Design Name</div>
+         <div class="rating">
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star' ></i>
+            <i class='bx bxs-star-half'></i>
+         </div>
+         <div class="price">25$</div>
+         <div class="size">
+            <p>Select Size</p>
+            <select name="size" id="size">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+         </div>
+         <div class="quantity">
+            <p>Choose the Quantity</p>
+            <input type="number" name="quantity" id="quantity" min="1" value="1">
+         </div>
+        <button class="buy-btn"><a href="#Form">Buy Now</a></button>
+    </div>
+    <!-- End Right Box  -->
+     </section>
+     <!-- End Product Box  -->
+     <!-- Start Form Box -->
+     <section id="Form">
+        <h2>Fill the Form to Confirm</h2>
+        <div class="container">
+            <div class="form-content">
+                <form action="">
+                    <input name="FullName" type="text" placeholder="Full Name"required>
+                    <input name="Phone Number" type="tel" placeholder="Phone Number"required>
+                    <input name="Wilaya" type="text" placeholder="Wilaya"required>
+                    <input name="Adress" type="text" placeholder="Adress"required>
+                    <input type="submit" value="Submit" class="send">
+                </form>
+            </div>
+            <div class="form-image">
+                <img src="imgs/formImg.png" alt="">
+            </div>
+        </div>
+    </section>
+     <!-- End Form Box  -->
+     <script src="JS/FormDynamique.js"></script>
+</body>
+</html>

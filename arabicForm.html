@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drippy_dz</title>
+    <!-- CSS file  -->
+    <link rel="stylesheet" href="CSS/arabicFormStyle.css">
+    <!-- Box Icon  -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <!-- Start NavBar  -->
+     <nav>
+        <div class="logo">
+            <div class="logo">Drippy_dz</div>
+        </div>
+         <ul>
+            <li><a href="englishForm.html">English</a></li>
+            <a href="shopArabic.html"><i class='bx bxs-cart-alt'></i></a>
+         </ul>
+     </nav>
+     <!-- End NavBar  -->
+     <!-- Start Product Box  -->
+     <section class="flex-box">
+        <!-- Start Right Box  -->
+        <div class="right">
+            <div class="url">الصفحة الرئيسية >  تسوق > طلب المنتج</div>
+            <div class="pname">اسم المنتج</div>
+             <div class="rating">
+                <i class='bx bxs-star-half'></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>
+                <i class='bx bxs-star' ></i>              
+             </div>
+             <div class="price">$25</div>
+             <div class="size">
+                <select name="size" id="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                </select>
+                <p>اختر مقاس</p>
+             </div>
+             <div class="quantity">
+                <input type="number" name="quantity" id="quantity" min="1" value="1">
+                <p>اختر الكمية</p>
+             </div>
+            <button class="buy-btn"><a href="#Form">شراء</a></button>
+        </div>
+        <!-- End Right Box  -->
+         <!-- Start Left Box  -->
+         <div class="left">
+            <div class="big-img">
+                <img src="imgs/d1.jpg" alt="image">
+            </div>
+        </div>
+        <!-- End Left Box  -->
+     </section>
+     <!-- End Product Box  -->
+     <!-- Start Form Box -->
+     <section id="Form">
+        <h2>استمارة تاكيد الطلب</h2>
+        <div class="container">
+            <div class="form-image">
+                <img src="imgs/formImg.png" alt="">
+            </div>
+            <div class="form-content">
+                <form action="">
+                    <input name="FullName" type="text" placeholder="الاسم الكامل"required>
+                    <input name="Phone Number" type="tel" placeholder="رقم الهاتف "required>
+                    <input name="Wilaya" type="text" placeholder="الولاية"required>
+                    <input name="Adress" type="text" placeholder="العنوان الكامل "required>
+                    <input type="submit" value="ارسال" class="send">
+                </form>
+            </div>
+        </div>
+    </section>
+     <!-- End Form Box  -->
+     <script src="JS/FormDynamique.js"></script>
+</body>
+</html>
